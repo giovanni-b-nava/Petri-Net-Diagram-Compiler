@@ -1,0 +1,28 @@
+draw_start Start "s0";
+DRAW_STATE BELOW_OF Start State1 "s1" (1);
+DRAW_STATE ABOVE_OF Start State2 "s2" (3);
+DRAW_STATE BELOW_OF State1 State3 "s3" (0);
+DRAW_STATE BELOW_OF State3 State4 "s4" (2);
+DRAW_STATE ABOVE_OF State2 State5 "s5" (1);
+
+DRAW_TRANSITION LEFT_OF Start Transition1 "t1";
+DRAW_TRANSITION RIGHT_OF Start Transition2 "t2";
+DRAW_TRANSITION LEFT_OF State3 Transition3 "t3";
+DRAW_TRANSITION RIGHT_OF State3 Transition4 "t4";
+DRAW_TRANSITION RIGHT_OF State5 Transition5 "t5";
+
+DRAW_ARROW Transition1 Start;
+DRAW_ARROW Start Transition2;
+DRAW_ARROW Transition3 State3;
+DRAW_ARROW State3 Transition4;
+DRAW_ARROW State5 Transition5;
+DRAW_CURVED_ARROW Transition1 State5 (left);
+DRAW_CURVED_ARROW Transition5 State2 (left);
+DRAW_CURVED_ARROW State2 Transition1 (right);
+DRAW_CURVED_ARROW Transition2 State2 (right);
+DRAW_CURVED_ARROW Transition1 State1 (right);
+DRAW_CURVED_ARROW State1 Transition2 (right);
+DRAW_CURVED_ARROW Transition3 State1 (left);
+DRAW_CURVED_ARROW State1 Transition4 (left);
+DRAW_CURVED_ARROW Transition4 State4 (left);
+DRAW_CURVED_ARROW State4 Transition3 (left);

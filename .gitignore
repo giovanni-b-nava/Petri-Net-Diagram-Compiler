@@ -5,6 +5,8 @@
 
 # Package Files #
 *.jar
+#except
+!antlr-3.4-complete.jar
 *.war
 *.ear
 

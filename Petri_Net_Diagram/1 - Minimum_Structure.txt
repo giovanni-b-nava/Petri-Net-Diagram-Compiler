@@ -1,0 +1,7 @@
+DRAW_START Start "s0";
+DRAW_STATE BELOW_OF Start State1 "s1" (1);
+
+DRAW_TRANSITION LEFT_OF Start Transition1 "t1";
+
+DRAW_ARROW Start Transition1;
+DRAW_ARROW Transition1 State1;

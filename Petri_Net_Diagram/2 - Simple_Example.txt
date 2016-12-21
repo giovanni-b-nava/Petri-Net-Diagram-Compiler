@@ -1,0 +1,12 @@
+DRAW_START Start "s0";
+DRAW_STATE ABOVE_OF Start State1 "s1" (1);
+DRAW_STATE ABOVE_OF State1 State2 "s2" (3);
+
+DRAW_TRANSITION LEFT_OF State2 Transition1 "t1";
+DRAW_TRANSITION RIGHT_OF State2 Transition2 "t2";
+
+DRAW_CURVED_ARROW Start Transition2 (right);
+DRAW_CURVED_ARROW State1 Transition1 (left);
+DRAW_ARROW Transition2 State2;
+DRAW_ARROW Transition1 State2;
+
