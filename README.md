@@ -7,8 +7,3 @@ The purpose of the project is to create a simple language that allows users to g
 The end result is the image of the network inserted. To achieve it we relied on a LaTeX engine that has presented itself as the most effective tool to achieve our goal.
 
 Please leave a review if you have enjoyed it!
-
-Authors:
-Andrea Quattri and.quattri@gmail.com 
-Antonio Cosseddu ant.cosseddu@gmail.com 
-Giovanni Battista Nava giovanni.b.nava@gmail.com 
